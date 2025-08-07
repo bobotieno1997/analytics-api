@@ -1,7 +1,7 @@
 {
     "build": {
         "builder": "DOCKERFILE",
-        "dockerfilePath": "./Dockerfile",
+        "dockerfilePath": "./Dockerfile.web",
         "watchPatterns": [
             "requirements.txt",
             "src/**",
@@ -10,7 +10,7 @@
         ]
     },
     "deploy": {
-      "healthcheckPath": "/healthz/",
+      "healthcheckPath": "/healthz",
       "healthcheckTimeout": 300,
       "startupTimeout": 300,
       "restartPolicyType": "always",
